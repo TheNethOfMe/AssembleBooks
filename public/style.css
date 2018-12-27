@@ -1,0 +1,25 @@
+body {
+  background: #ccc;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #ccc;
+  padding: 15px;
+}
+
+.book-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.book-area img {
+  height: 250px;
+}
+
+.book-area h5 {
+  text-align: center;
+}

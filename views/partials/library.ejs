@@ -1,0 +1,29 @@
+<div class="container">
+  <h3>Titles A - M</h3>
+  <div class="row">
+    <% dataAM.forEach(book => { %>
+    <div class="col-sm book-area">
+      <img
+        src="<%= book.volumeInfo.imageLinks.smallThumbnail %>"
+        alt="Book Cover"
+      />
+      <h5><%= book.volumeInfo.title %></h5>
+      <h6>By <%= book.volumeInfo.authors[0] %></h6>
+    </div>
+    <% }) %>
+  </div>
+
+  <h3>Titles N - Z</h3>
+  <div class="row">
+    <% dataNZ.forEach(book => { %>
+    <div class="col-sm book-area">
+      <img
+        src="<%= book.volumeInfo.imageLinks.smallThumbnail %>"
+        alt="Book Cover"
+      />
+      <h5><%= book.volumeInfo.title %></h5>
+      <h6>By <%= book.volumeInfo.authors[0] %></h6>
+    </div>
+    <% }) %>
+  </div>
+</div>

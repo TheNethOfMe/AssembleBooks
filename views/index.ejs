@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head'); %>
+  <body>
+    <header><h1>Assemble Books</h1></header>
+    <div class="container">
+      <h2>Books</h2>
+      <main>
+        <%- include('partials/library', { dataAM: dataAM, dataNZ: dataNZ }); %>
+      </main>
+    </div>
+    <footer><%- include('partials/footer'); %></footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
